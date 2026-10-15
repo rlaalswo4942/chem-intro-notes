@@ -1,0 +1,1918 @@
+{
+  "notice": "강의 자료 「화학개론」(Zumdahl) 1~7장 기반 자체 제작 문제입니다. 계산 문제는 유효 숫자까지 확인하세요.",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "Q0001",
+      "topic": "U01",
+      "level": "입문",
+      "type": "single_choice",
+      "question": "화학의 정의로 가장 알맞은 것은?",
+      "choices": [
+        "우주에 존재하는 물질과 그 변화를 다루는 과학",
+        "생물의 구조와 기능을 다루는 과학",
+        "힘과 운동의 법칙을 다루는 과학",
+        "천체의 운동을 다루는 과학"
+      ],
+      "answerIndex": 0,
+      "explanation": "화학은 물질과 그 변화를 다루는 과학입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0002",
+      "topic": "U01",
+      "level": "입문",
+      "type": "single_choice",
+      "question": "화학을 다른 과학의 기초가 된다는 뜻으로 부르는 이름은?",
+      "choices": [
+        "순수 과학",
+        "중심 과학",
+        "응용 과학",
+        "기초 공학"
+      ],
+      "answerIndex": 1,
+      "explanation": "화학은 중심 과학(central science)이라고 합니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0003",
+      "topic": "U01",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "과학적 방법의 순서로 옳은 것은?",
+      "choices": [
+        "실험 → 가설 → 관찰",
+        "관찰 → 실험 → 가설",
+        "관찰 → 가설 → 실험",
+        "가설 → 관찰 → 실험"
+      ],
+      "answerIndex": 2,
+      "explanation": "관찰로 문제를 파악하고, 가설로 설명을 제안하고, 실험으로 검증합니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0004",
+      "topic": "U01",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "다음 중 정량적 관찰은?",
+      "choices": [
+        "물은 액체이다",
+        "소금은 짠맛이 난다",
+        "하늘은 파랗다",
+        "어떤 화학책의 무게가 2 kg이다"
+      ],
+      "answerIndex": 3,
+      "explanation": "정량적 관찰은 숫자와 단위로 나타낸 측정입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0005",
+      "topic": "U01",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "자연이 '왜' 그렇게 행동하는지 설명하는 것은?",
+      "choices": [
+        "이론",
+        "측정",
+        "관찰",
+        "법칙"
+      ],
+      "answerIndex": 0,
+      "explanation": "법칙은 무슨 일이 일어나는지 요약하고, 이론은 왜 일어나는지 설명합니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0006",
+      "topic": "U01",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "다음 중 화학 반응이 아닌 것은?",
+      "choices": [
+        "자동차 금속 부품에 녹이 스는 것",
+        "얼음이 녹아 물이 되는 것",
+        "나무가 공기 중에서 타는 것",
+        "발전소 배출물로 산성비가 내리는 것"
+      ],
+      "answerIndex": 1,
+      "explanation": "얼음이 녹는 것은 상태만 바뀌는 물리적 변화입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0007",
+      "topic": "U01",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "이론(모형)에 대한 설명으로 옳지 않은 것은?",
+      "choices": [
+        "이론으로 예측하고 실험으로 확인한다",
+        "여러 관찰과 일치하는 검증된 가설의 모음이다",
+        "한 번 확립된 이론은 절대 바뀌지 않는다",
+        "새로운 정보에 따라 계속 다듬어진다"
+      ],
+      "answerIndex": 2,
+      "explanation": "이론은 새 실험 결과에 따라 계속 고쳐 나갑니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0008",
+      "topic": "U01",
+      "level": "입문",
+      "type": "single_choice",
+      "question": "관찰에 대한 가능성 있는 설명을 무엇이라 하는가?",
+      "choices": [
+        "결론",
+        "법칙",
+        "측정",
+        "가설"
+      ],
+      "answerIndex": 3,
+      "explanation": "가설은 관찰에 대해 가능성이 있는 설명입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0009",
+      "topic": "U02",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "238,000을 과학적 표기법으로 나타낸 것은?",
+      "choices": [
+        "2.38 × 10⁵",
+        "2.38 × 10⁶",
+        "23.8 × 10⁴",
+        "2.38 × 10⁻⁵"
+      ],
+      "answerIndex": 0,
+      "explanation": "소수점을 왼쪽으로 5자리 옮겼으므로 지수는 +5입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0010",
+      "topic": "U02",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "0.089를 과학적 표기법으로 나타낸 것은?",
+      "choices": [
+        "8.9 × 10²",
+        "8.9 × 10⁻²",
+        "0.89 × 10⁻¹",
+        "8.9 × 10⁻³"
+      ],
+      "answerIndex": 1,
+      "explanation": "소수점을 오른쪽으로 2자리 옮겼으므로 지수는 −2입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0011",
+      "topic": "U02",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "접두어 마이크로(μ)가 나타내는 값은?",
+      "choices": [
+        "10⁻⁹",
+        "10⁻³",
+        "10⁻⁶",
+        "10⁶"
+      ],
+      "answerIndex": 2,
+      "explanation": "밀리 10⁻³, 마이크로 10⁻⁶, 나노 10⁻⁹입니다.",
+      "sourceIds": [
+        "S01"
+      ],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0012",
+      "topic": "U02",
+      "level": "입문",
+      "type": "single_choice",
+      "question": "질량의 SI 기본 단위는?",
+      "choices": [
+        "그램(g)",
+        "밀리그램(mg)",
+        "파운드(lb)",
+        "킬로그램(kg)"
+      ],
+      "answerIndex": 3,
+      "explanation": "SI 기본 단위: 질량 kg, 길이 m, 시간 s, 온도 K",
+      "sourceIds": [
+        "S01"
+      ],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0013",
+      "topic": "U02",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "0.0025의 유효 숫자 개수는?",
+      "choices": [
+        "2개",
+        "4개",
+        "3개",
+        "5개"
+      ],
+      "answerIndex": 0,
+      "explanation": "앞에 있는 0은 자릿수만 나타내므로 유효 숫자가 아닙니다. 2와 5만 셉니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0014",
+      "topic": "U02",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "1.008의 유효 숫자 개수는?",
+      "choices": [
+        "3개",
+        "4개",
+        "1개",
+        "2개"
+      ],
+      "answerIndex": 1,
+      "explanation": "0이 아닌 숫자 사이의 0은 항상 유효 숫자입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0015",
+      "topic": "U02",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "100. (소수점 있음)의 유효 숫자 개수는?",
+      "choices": [
+        "2개",
+        "0개",
+        "3개",
+        "1개"
+      ],
+      "answerIndex": 2,
+      "explanation": "끝에 있는 0은 소수점이 있을 때만 유효합니다. 100은 1개, 100.은 3개입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0016",
+      "topic": "U02",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "4.56 × 1.4 를 유효 숫자에 맞게 쓰면?",
+      "choices": [
+        "6.384",
+        "6",
+        "6.38",
+        "6.4"
+      ],
+      "answerIndex": 3,
+      "explanation": "곱셈은 유효 숫자 개수가 가장 적은 값(1.4 → 2개)에 맞춥니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0017",
+      "topic": "U02",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "12.11 + 18.0 + 1.013 을 유효 숫자에 맞게 쓰면?",
+      "choices": [
+        "31.1",
+        "31.12",
+        "31",
+        "31.123"
+      ],
+      "answerIndex": 0,
+      "explanation": "덧셈은 소수점 아래 자릿수가 가장 적은 값(18.0 → 1자리)에 맞춥니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0018",
+      "topic": "U02",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "2.85 cm는 몇 인치인가? (1 in. = 2.54 cm)",
+      "choices": [
+        "7.24 in.",
+        "1.12 in.",
+        "0.891 in.",
+        "2.85 in."
+      ],
+      "answerIndex": 1,
+      "explanation": "2.85 cm × (1 in. / 2.54 cm) = 1.12 in.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0019",
+      "topic": "U02",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "마라톤 거리 26.2 mi는 약 몇 km인가? (1 mi = 1760 yd, 1 m = 1.094 yd)",
+      "choices": [
+        "46.1 km",
+        "28.7 km",
+        "42.1 km",
+        "16.3 km"
+      ],
+      "answerIndex": 2,
+      "explanation": "26.2 × 1760 ÷ 1.094 ÷ 1000 = 42.1 km",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0020",
+      "topic": "U02",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "25 °C는 몇 K인가?",
+      "choices": [
+        "77 K",
+        "248 K",
+        "273 K",
+        "298 K"
+      ],
+      "answerIndex": 3,
+      "explanation": "T(K) = T(°C) + 273 = 298 K",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0021",
+      "topic": "U02",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "물이 끓는 100 °C는 화씨로 몇 °F인가?",
+      "choices": [
+        "212 °F",
+        "132 °F",
+        "180 °F",
+        "373 °F"
+      ],
+      "answerIndex": 0,
+      "explanation": "T(°F) = 1.80 × 100 + 32 = 212 °F",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0022",
+      "topic": "U02",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "액체 23.50 mL의 질량이 35.062 g일 때 밀도는?",
+      "choices": [
+        "823.9 g/mL",
+        "1.492 g/mL",
+        "11.56 g/mL",
+        "0.6702 g/mL"
+      ],
+      "answerIndex": 1,
+      "explanation": "밀도 = 질량 / 부피 = 35.062 ÷ 23.50 = 1.492 g/mL",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0023",
+      "topic": "U02",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "비중에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "질량 × 부피로 구한다",
+        "기체에만 쓰는 값이다",
+        "물의 밀도에 대한 비이므로 단위가 없다",
+        "단위는 g/cm³이다"
+      ],
+      "answerIndex": 2,
+      "explanation": "비중은 밀도의 비이므로 단위가 없습니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0024",
+      "topic": "U02",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "1 mL와 같은 부피는?",
+      "choices": [
+        "1 L",
+        "1 dm³",
+        "1 m³",
+        "1 cm³"
+      ],
+      "answerIndex": 3,
+      "explanation": "1 mL = 1 cm³, 1 L = 1000 mL",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0025",
+      "topic": "U02",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "한 눈금(1도)의 크기가 가장 작은 온도 척도는?",
+      "choices": [
+        "화씨",
+        "섭씨",
+        "켈빈",
+        "섭씨와 켈빈이 모두 같은 가장 작은 크기"
+      ],
+      "answerIndex": 0,
+      "explanation": "물의 어는점~끓는점 사이가 섭씨·켈빈은 100칸, 화씨는 180칸이라 화씨 한 눈금이 더 작습니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0026",
+      "topic": "U02",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "유효 숫자 개수를 제한하지 않는 '정확한 수'의 예는?",
+      "choices": [
+        "온도계로 잰 25.0 °C",
+        "1 in. = 2.54 cm의 2.54",
+        "저울로 잰 12.5 g",
+        "자로 잰 3.2 cm"
+      ],
+      "answerIndex": 1,
+      "explanation": "세어서 얻은 수나 정의에서 나온 수는 정확한 수입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0027",
+      "topic": "U03",
+      "level": "입문",
+      "type": "single_choice",
+      "question": "일정한 부피를 갖지만 용기의 모양을 따르는 상태는?",
+      "choices": [
+        "기체",
+        "고체",
+        "액체",
+        "플라스마"
+      ],
+      "answerIndex": 2,
+      "explanation": "고체는 모양·부피 고정, 액체는 부피만 고정, 기체는 둘 다 고정되지 않습니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0028",
+      "topic": "U03",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "다음 중 물리적 성질이 아닌 것은?",
+      "choices": [
+        "밀도",
+        "끓는점",
+        "색",
+        "철이 녹스는 성질"
+      ],
+      "answerIndex": 3,
+      "explanation": "녹스는 것은 다른 물질로 바뀌는 화학적 성질입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0029",
+      "topic": "U03",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "다음 중 화학적 변화는?",
+      "choices": [
+        "물의 전기분해",
+        "물이 끓음",
+        "설탕이 물에 녹음",
+        "얼음이 녹음"
+      ],
+      "answerIndex": 0,
+      "explanation": "물의 전기분해는 물이 수소와 산소라는 새 물질로 바뀝니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0030",
+      "topic": "U03",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "다음 중 균일 혼합물(용액)은?",
+      "choices": [
+        "모래를 섞은 물",
+        "공기",
+        "흙탕물",
+        "물"
+      ],
+      "answerIndex": 1,
+      "explanation": "공기·소금물·황동은 균일 혼합물입니다. 물은 순물질(화합물)입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0031",
+      "topic": "U03",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "다음 중 순물질이 아닌 것은?",
+      "choices": [
+        "물",
+        "산소",
+        "소금물",
+        "염화 소듐"
+      ],
+      "answerIndex": 2,
+      "explanation": "소금물은 소금과 물의 혼합물입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0032",
+      "topic": "U03",
+      "level": "입문",
+      "type": "single_choice",
+      "question": "증류는 무엇의 차이를 이용해 혼합물을 분리하는가?",
+      "choices": [
+        "색",
+        "입자 크기",
+        "밀도",
+        "끓는점"
+      ],
+      "answerIndex": 3,
+      "explanation": "증류는 끓는점이 다른 물질을 분리합니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0033",
+      "topic": "U03",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "모래-소금물 혼합물에서 모래, 소금, 순수한 물을 모두 얻는 순서는?",
+      "choices": [
+        "여과 → 증류",
+        "전기분해 → 여과",
+        "증류 → 전기분해",
+        "증류 → 여과"
+      ],
+      "answerIndex": 0,
+      "explanation": "여과로 모래를 거르고, 남은 소금물을 증류해 소금과 물로 나눕니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0034",
+      "topic": "U03",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "물을 전기분해할 때 (−)극에서 생기는 기체는?",
+      "choices": [
+        "염소",
+        "수소",
+        "산소",
+        "이산화 탄소"
+      ],
+      "answerIndex": 1,
+      "explanation": "(−)극: 2H₂O + 2e⁻ → H₂ + 2OH⁻ (환원), (+)극에서 산소가 생깁니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0035",
+      "topic": "U03",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "화합물을 원소로 나누는 방법은?",
+      "choices": [
+        "여과",
+        "증류",
+        "화학적 방법",
+        "거름종이"
+      ],
+      "answerIndex": 2,
+      "explanation": "혼합물 → 순물질은 물리적 방법, 화합물 → 원소는 화학적 방법입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0036",
+      "topic": "U03",
+      "level": "입문",
+      "type": "single_choice",
+      "question": "다음 중 화합물은?",
+      "choices": [
+        "산소(O₂)",
+        "금(Au)",
+        "공기",
+        "이산화 탄소(CO₂)"
+      ],
+      "answerIndex": 3,
+      "explanation": "화합물은 둘 이상의 원소가 일정 조성으로 결합한 물질입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0037",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "소듐(Na)의 기호가 유래한 라틴어 이름은?",
+      "choices": [
+        "natrium",
+        "ferrum",
+        "sodium",
+        "kalium"
+      ],
+      "answerIndex": 0,
+      "explanation": "Na = natrium, K = kalium, Fe = ferrum",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0038",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "원소 이름과 기호의 짝이 틀린 것은?",
+      "choices": [
+        "납 – Pb",
+        "칼륨(포타슘) – Ca",
+        "철 – Fe",
+        "금 – Au"
+      ],
+      "answerIndex": 1,
+      "explanation": "칼륨(포타슘)은 K, 칼슘이 Ca입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0039",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "'어떤 화합물이든 어디에서 왔든 항상 같은 조성을 가진다'는 법칙은?",
+      "choices": [
+        "질량 보존 법칙",
+        "배수 비례 법칙",
+        "일정 성분비 법칙",
+        "기체 반응 법칙"
+      ],
+      "answerIndex": 2,
+      "explanation": "일정 성분비 법칙(law of constant composition)입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0040",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "돌턴의 원자론에 해당하지 않는 것은?",
+      "choices": [
+        "화합물의 원자 수의 비는 항상 같다",
+        "같은 원소의 원자는 모두 동일하다",
+        "원소는 원자라는 작은 입자로 이루어져 있다",
+        "화학 반응에서 원자는 다른 원소의 원자로 바뀐다"
+      ],
+      "answerIndex": 3,
+      "explanation": "돌턴: 원자는 반응에서 창조·파괴되지 않고 결합 방식만 바뀝니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0041",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "러더퍼드의 알파 입자 산란 실험으로 발견한 것은?",
+      "choices": [
+        "원자핵",
+        "동위원소",
+        "전자",
+        "중성자"
+      ],
+      "answerIndex": 0,
+      "explanation": "일부 알파 입자가 크게 튕겨 나와 작고 밀집된 양전하의 핵이 있음을 알았습니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0042",
+      "topic": "U04",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "알파(α) 입자의 질량수와 전하로 옳은 것은?",
+      "choices": [
+        "질량수 2, 전하 +2",
+        "질량수 4, 전하 +2",
+        "질량수 2, 전하 +4",
+        "질량수 4, 전하 0"
+      ],
+      "answerIndex": 1,
+      "explanation": "알파 입자 = 헬륨 원자핵 = 양성자 2 + 중성자 2, 전자가 없어 +2입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0043",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "전자의 질량을 1로 놓았을 때 양성자의 상대 질량은?",
+      "choices": [
+        "1839",
+        "1",
+        "1836",
+        "0"
+      ],
+      "answerIndex": 2,
+      "explanation": "전자 1, 양성자 1836, 중성자 1839",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0044",
+      "topic": "U04",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "²³₁₁Na 원자의 중성자 수는?",
+      "choices": [
+        "34",
+        "23",
+        "11",
+        "12"
+      ],
+      "answerIndex": 3,
+      "explanation": "중성자 수 = 질량수 − 원자 번호 = 23 − 11 = 12",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0045",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "동위원소에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "양성자 수는 같고 중성자 수가 다르다",
+        "같은 원소의 다른 형태(다이아몬드·흑연)이다",
+        "양성자 수가 다르고 중성자 수는 같다",
+        "전자 수만 다르다"
+      ],
+      "answerIndex": 0,
+      "explanation": "같은 원소의 다른 형태는 동소체입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0046",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "전기음성도가 가장 큰 원소는?",
+      "choices": [
+        "O",
+        "F",
+        "He",
+        "Na"
+      ],
+      "answerIndex": 1,
+      "explanation": "전기음성도는 오른쪽·위로 갈수록 크고, F(4.0)가 가장 큽니다.",
+      "sourceIds": [
+        "S02"
+      ],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0047",
+      "topic": "U04",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "Na, K가 물과 격렬히 반응하는 이유와 관련된 설명은?",
+      "choices": [
+        "원자 반지름이 가장 작기 때문",
+        "비활성 기체이기 때문",
+        "이온화 에너지가 작아 전자를 쉽게 내주기 때문",
+        "전기음성도가 가장 크기 때문"
+      ],
+      "answerIndex": 2,
+      "explanation": "알칼리 금속은 이온화 에너지가 작아 반응성이 크고, 물과 반응해 수소를 내며 화재·폭발 위험이 있습니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0048",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "상온(25 ℃)에서 액체로 존재하는 원소만 고른 것은?",
+      "choices": [
+        "Na, Cs",
+        "Hg, Ga",
+        "Br₂, I₂",
+        "Hg, Br₂"
+      ],
+      "answerIndex": 3,
+      "explanation": "상온 액체 원소는 수은(금속)과 브로민(비금속)뿐입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0049",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "원소 상태에서 이원자 분자로 존재하지 않는 것은?",
+      "choices": [
+        "아르곤(Ar)",
+        "질소(N₂)",
+        "염소(Cl₂)",
+        "아이오딘(I₂)"
+      ],
+      "answerIndex": 0,
+      "explanation": "이원자 분자: H₂ N₂ O₂ F₂ Cl₂ Br₂ I₂. 아르곤은 원자 하나로 존재합니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0050",
+      "topic": "U04",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "같은 원소의 다른 형태인 동소체의 예는?",
+      "choices": [
+        "Na와 Na⁺",
+        "다이아몬드와 흑연",
+        "물과 과산화 수소",
+        "²³Na와 ²⁴Na"
+      ],
+      "answerIndex": 1,
+      "explanation": "탄소의 동소체: 다이아몬드, 흑연, 버크민스터풀러렌",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0051",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "2족 원소인 마그네슘이 만드는 이온은?",
+      "choices": [
+        "Mg⁺",
+        "Mg³⁺",
+        "Mg²⁺",
+        "Mg²⁻"
+      ],
+      "answerIndex": 2,
+      "explanation": "1족 1+, 2족 2+, 3족 3+, 6족 2−, 7족 1−",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0052",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "S²⁻ 이온의 이름은?",
+      "choices": [
+        "아황산 이온",
+        "황 이온",
+        "황산 이온",
+        "황화 이온"
+      ],
+      "answerIndex": 3,
+      "explanation": "단원자 음이온은 어간 + -화(-ide): 황화 이온(sulfide)",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0053",
+      "topic": "U04",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "Li₃N에서 질소 이온의 전하는?",
+      "choices": [
+        "3−",
+        "3+",
+        "1−",
+        "2−"
+      ],
+      "answerIndex": 0,
+      "explanation": "Li⁺ 3개 = +3이므로 알짜 전하 0이 되려면 N³⁻입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0054",
+      "topic": "U04",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "소금(NaCl)과 전류에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "물에 녹으면 흐르지 않는다",
+        "고체에서는 흐르지 않고 물에 녹으면 흐른다",
+        "고체에서만 흐른다",
+        "어떤 상태에서도 흐르지 않는다"
+      ],
+      "answerIndex": 1,
+      "explanation": "이온이 움직일 수 있어야 전류가 흐릅니다. 녹으면 이온이 자유롭게 움직입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0055",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "주기율표에서 원자 반지름이 커지는 방향은?",
+      "choices": [
+        "왼쪽·위",
+        "오른쪽·아래",
+        "왼쪽·아래",
+        "오른쪽·위"
+      ],
+      "answerIndex": 2,
+      "explanation": "아래로 갈수록 전자 껍질이 많아져 커지고, 왼쪽일수록 큽니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0056",
+      "topic": "U04",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "같은 족 원소들의 성질이 비슷한 이유는?",
+      "choices": [
+        "질량수가 같기 때문",
+        "중성자 수가 같기 때문",
+        "전자 껍질 수가 같기 때문",
+        "원자가 전자 수가 같기 때문"
+      ],
+      "answerIndex": 3,
+      "explanation": "족 = 원자가 전자 수, 주기 = 전자 껍질 수",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0057",
+      "topic": "U04",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "NaF는 어떤 결합의 화합물인가?",
+      "choices": [
+        "이온 결합",
+        "금속 결합",
+        "공유 결합",
+        "결합하지 않음"
+      ],
+      "answerIndex": 0,
+      "explanation": "Na와 F의 전기음성도 차이가 매우 커서 이온 결합입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0058",
+      "topic": "U05",
+      "level": "입문",
+      "type": "single_choice",
+      "question": "NaCl의 한글 이름은?",
+      "choices": [
+        "염화 소듐(I)",
+        "염화 소듐",
+        "염소 나트륨",
+        "소듐 염화"
+      ],
+      "answerIndex": 1,
+      "explanation": "음이온(염화) 먼저, 양이온(소듐) 나중에 읽습니다. Na는 유형 I이라 로마 숫자가 없습니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0059",
+      "topic": "U05",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "KI의 이름은?",
+      "choices": [
+        "아이오딘산 포타슘",
+        "포타슘 아이오딘",
+        "아이오딘화 포타슘",
+        "아이오딘화 칼슘"
+      ],
+      "answerIndex": 2,
+      "explanation": "K⁺ = 포타슘, I⁻ = 아이오딘화",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0060",
+      "topic": "U05",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "CaS의 이름은?",
+      "choices": [
+        "칼슘 황",
+        "아황산 칼슘",
+        "황산 칼슘",
+        "황화 칼슘"
+      ],
+      "answerIndex": 3,
+      "explanation": "S²⁻ = 황화, Ca²⁺ = 칼슘",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0061",
+      "topic": "U05",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "이름에 로마 숫자가 필요한 화합물은?",
+      "choices": [
+        "FeCl₃",
+        "NaCl",
+        "Al₂O₃",
+        "CaCl₂"
+      ],
+      "answerIndex": 0,
+      "explanation": "Fe는 Fe²⁺와 Fe³⁺를 만드는 전이 금속(유형 II)입니다. FeCl₃ = 염화 철(III)",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0062",
+      "topic": "U05",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "PbO₂의 이름은?",
+      "choices": [
+        "과산화 납",
+        "산화 납(IV)",
+        "산화 납(II)",
+        "이산화 납(II)"
+      ],
+      "answerIndex": 1,
+      "explanation": "O²⁻ 2개 = 4− → Pb⁴⁺ → 산화 납(IV)",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0063",
+      "topic": "U05",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "Fe₂O₃의 이름은?",
+      "choices": [
+        "삼산화 이철",
+        "산화 철(II)",
+        "산화 철(III)",
+        "산화 철(VI)"
+      ],
+      "answerIndex": 2,
+      "explanation": "O²⁻ 3개 = 6−를 Fe 2개가 나누므로 Fe³⁺",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0064",
+      "topic": "U05",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "CuCl의 이름은?",
+      "choices": [
+        "염화 구리(II)",
+        "일염화 구리",
+        "염화 구리",
+        "염화 구리(I)"
+      ],
+      "answerIndex": 3,
+      "explanation": "Cl⁻ 1개 → Cu⁺. 구리는 전이 금속이라 로마 숫자를 씁니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0065",
+      "topic": "U05",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "N₂O₅의 이름은?",
+      "choices": [
+        "오산화 이질소",
+        "오산화 질소",
+        "이질소 오산화",
+        "산화 질소(V)"
+      ],
+      "answerIndex": 0,
+      "explanation": "유형 III: N 2개 = 이, O 5개 = 오",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0066",
+      "topic": "U05",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "CO를 '일산화 탄소'라 하고 '일산화 일탄소'라 하지 않는 이유는?",
+      "choices": [
+        "탄소는 금속이기 때문",
+        "첫 번째 원소에는 일(mono-)을 쓰지 않기 때문",
+        "탄소는 항상 1개이기 때문",
+        "CO는 이온 결합 화합물이기 때문"
+      ],
+      "answerIndex": 1,
+      "explanation": "유형 III 규칙 4: 첫 번째 원소에는 mono-를 쓰지 않습니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0067",
+      "topic": "U05",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "SF₆의 이름은?",
+      "choices": [
+        "육황화 플루오린",
+        "플루오린화 황(VI)",
+        "육플루오린화 황",
+        "황 육플루오린화"
+      ],
+      "answerIndex": 2,
+      "explanation": "F 6개 → 육(hexa-), 두 번째 원소는 음이온처럼(플루오린화)",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0068",
+      "topic": "U05",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "SO₄²⁻의 이름은?",
+      "choices": [
+        "황화 이온",
+        "과황산 이온",
+        "아황산 이온",
+        "황산 이온"
+      ],
+      "answerIndex": 3,
+      "explanation": "SO₄²⁻ 황산(sulfate), SO₃²⁻ 아황산(sulfite), S²⁻ 황화(sulfide)",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0069",
+      "topic": "U05",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "ClO⁻의 이름은?",
+      "choices": [
+        "하이포아염소산 이온",
+        "아염소산 이온",
+        "염소산 이온",
+        "과염소산 이온"
+      ],
+      "answerIndex": 0,
+      "explanation": "ClO⁻ 하이포아염소산, ClO₂⁻ 아염소산, ClO₃⁻ 염소산, ClO₄⁻ 과염소산",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0070",
+      "topic": "U05",
+      "level": "입문",
+      "type": "single_choice",
+      "question": "NH₄⁺의 이름은?",
+      "choices": [
+        "질산 이온",
+        "암모늄 이온",
+        "암모니아 이온",
+        "아질산 이온"
+      ],
+      "answerIndex": 1,
+      "explanation": "NH₄⁺는 대표적인 다원자 양이온인 암모늄 이온입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0071",
+      "topic": "U05",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "HNO₃의 이름은?",
+      "choices": [
+        "과질산",
+        "질화 수소산",
+        "질산",
+        "아질산"
+      ],
+      "answerIndex": 2,
+      "explanation": "NO₃⁻(nitrate, -ate) → nitric acid(질산)",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0072",
+      "topic": "U05",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "HClO₂의 이름은?",
+      "choices": [
+        "과염소산",
+        "염소산",
+        "하이포아염소산",
+        "아염소산"
+      ],
+      "answerIndex": 3,
+      "explanation": "ClO₂⁻ = chlorite(-ite) → chlorous acid(아염소산)",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0073",
+      "topic": "U05",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "염화 수소(HCl) 기체가 물에 녹은 산의 이름은?",
+      "choices": [
+        "염산(염화 수소산)",
+        "과염소산",
+        "하이포아염소산",
+        "염소산"
+      ],
+      "answerIndex": 0,
+      "explanation": "산소가 없는 음이온의 산 → …화 수소산. HCl → 염화 수소산 = 염산",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0074",
+      "topic": "U05",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "탄산 소듐의 화학식은?",
+      "choices": [
+        "NaHCO₃",
+        "Na₂CO₃",
+        "NaCO₃",
+        "Na(CO₃)₂"
+      ],
+      "answerIndex": 1,
+      "explanation": "CO₃²⁻의 2−와 균형을 맞추려면 Na⁺ 2개가 필요합니다. NaHCO₃는 탄산수소 소듐입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0075",
+      "topic": "U05",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "질산 코발트(III)의 화학식은?",
+      "choices": [
+        "Co₃NO₃",
+        "CoNO₃",
+        "Co(NO₃)₃",
+        "Co(NO₂)₃"
+      ],
+      "answerIndex": 2,
+      "explanation": "Co³⁺와 균형을 맞추려면 NO₃⁻ 3개가 필요합니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0076",
+      "topic": "U05",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "FeSO₄의 이름은?",
+      "choices": [
+        "황산 철(III)",
+        "황화 철(II)",
+        "아황산 철(II)",
+        "황산 철(II)"
+      ],
+      "answerIndex": 3,
+      "explanation": "SO₄²⁻의 2−와 균형 → Fe²⁺ → 황산 철(II)",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0077",
+      "topic": "U05",
+      "level": "입문",
+      "type": "single_choice",
+      "question": "유형 III 이성분 화합물의 구성은?",
+      "choices": [
+        "비금속 + 비금속",
+        "금속 + 비금속",
+        "전이 금속 + 비금속",
+        "금속 + 금속"
+      ],
+      "answerIndex": 0,
+      "explanation": "유형 I·II는 금속 + 비금속(이온 결합), 유형 III은 비금속끼리(공유 결합)",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0078",
+      "topic": "U05",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "과염소산 암모늄의 화학식은?",
+      "choices": [
+        "NH₄ClO₃",
+        "NH₄ClO₄",
+        "(NH₄)₂ClO₄",
+        "NH₃ClO₄"
+      ],
+      "answerIndex": 1,
+      "explanation": "NH₄⁺ + ClO₄⁻(과염소산 이온) → NH₄ClO₄",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0079",
+      "topic": "U06",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "다음 중 화학 반응의 증거로 보기 어려운 것은?",
+      "choices": [
+        "철이 녹슬어 붉은 갈색으로 변함",
+        "베이킹소다에 식초를 부으면 기포가 생김",
+        "물이 끓을 때 생기는 기포",
+        "석회수에 입김을 불면 뿌옇게 흐려짐"
+      ],
+      "answerIndex": 2,
+      "explanation": "물이 끓는 것은 물리 변화입니다. 판단 기준은 새 물질이 생겼는가입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0080",
+      "topic": "U06",
+      "level": "입문",
+      "type": "single_choice",
+      "question": "반응식에서 (aq)가 뜻하는 상태는?",
+      "choices": [
+        "고체",
+        "기체",
+        "액체",
+        "물에 녹은 상태(수용액)"
+      ],
+      "answerIndex": 3,
+      "explanation": "(s) 고체, (l) 액체, (g) 기체, (aq) 수용액",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0081",
+      "topic": "U06",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "반응식의 균형을 맞출 때 바꿀 수 있는 것은?",
+      "choices": [
+        "계수",
+        "아래 첨자",
+        "화살표 방향",
+        "원소 기호"
+      ],
+      "answerIndex": 0,
+      "explanation": "계수만 바꿉니다. 첨자를 바꾸면 다른 물질이 됩니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0082",
+      "topic": "U06",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "2H₂ + O₂ → □H₂O 에서 □는?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answerIndex": 1,
+      "explanation": "H 4개, O 2개를 맞추려면 H₂O 2개",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0083",
+      "topic": "U06",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "CH₄ + □O₂ → CO₂ + 2H₂O 에서 □는?",
+      "choices": [
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "answerIndex": 2,
+      "explanation": "오른쪽 O = 2 + 2 = 4개 → O₂ 2개",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0084",
+      "topic": "U06",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "C₂H₅OH + □O₂ → 2CO₂ + 3H₂O 에서 □는?",
+      "choices": [
+        "2",
+        "7",
+        "4",
+        "3"
+      ],
+      "answerIndex": 3,
+      "explanation": "오른쪽 O = 4 + 3 = 7, 왼쪽 에탄올 O 1개 → O₂에서 6개 → 3",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0085",
+      "topic": "U06",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "4NH₃ + □O₂ → 4NO + 6H₂O 에서 □는?",
+      "choices": [
+        "5",
+        "3",
+        "4",
+        "6"
+      ],
+      "answerIndex": 0,
+      "explanation": "오른쪽 O = 4 + 6 = 10 → O₂ 5개",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0086",
+      "topic": "U06",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "SiO₂ + □HF → SiF₄ + 2H₂O 에서 □는?",
+      "choices": [
+        "1",
+        "4",
+        "6",
+        "2"
+      ],
+      "answerIndex": 1,
+      "explanation": "SiF₄의 F 4개를 맞추려면 HF 4개",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0087",
+      "topic": "U06",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "H₂O의 첨자를 바꿔 H₂O₂로 쓰면 어떻게 되는가?",
+      "choices": [
+        "물의 상태만 바뀐다",
+        "균형이 맞는 올바른 방법이다",
+        "과산화 수소라는 전혀 다른 물질이 된다",
+        "물 분자 2개가 된다"
+      ],
+      "answerIndex": 2,
+      "explanation": "첨자를 바꾸면 다른 물질입니다(H₂O₂는 제6류 위험물). 물 2개는 2H₂O로 씁니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0088",
+      "topic": "U06",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "철가루가 산소와 반응해 열을 내는 핫팩은 어떤 반응인가?",
+      "choices": [
+        "물리적 변화",
+        "침전 반응",
+        "흡열 반응",
+        "발열 반응"
+      ],
+      "answerIndex": 3,
+      "explanation": "핫팩은 발열, 냉찜질팩은 흡열 반응입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0089",
+      "topic": "U06",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "반응식의 균형을 맞출 때 어디부터 시작하는 것이 좋은가?",
+      "choices": [
+        "가장 복잡한 분자",
+        "생성물의 마지막 물질",
+        "가장 간단한 분자",
+        "O₂ 같은 홑원소 분자"
+      ],
+      "answerIndex": 0,
+      "explanation": "4단계 방법의 단계 3: 가장 복잡한 분자부터 맞춥니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0090",
+      "topic": "U06",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "□NaCl + 2H₂O → 2NaOH + H₂ + Cl₂ 에서 □는?",
+      "choices": [
+        "4",
+        "2",
+        "3",
+        "1"
+      ],
+      "answerIndex": 1,
+      "explanation": "Na: 오른쪽 2개, Cl: 오른쪽 2개 → NaCl 2개",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0091",
+      "topic": "U06",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "금수성 물질인 포타슘(K) 화재의 소화 방법으로 알맞은 것은?",
+      "choices": [
+        "내알코올포를 쓴다",
+        "산을 부어 중화한다",
+        "마른 모래·팽창 질석으로 덮는다",
+        "물을 뿌린다"
+      ],
+      "answerIndex": 2,
+      "explanation": "K는 물과 반응해 수소를 내며 발화하므로 물을 쓰면 안 됩니다.",
+      "sourceIds": [
+        "S04"
+      ],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0092",
+      "topic": "U06",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "C₃H₈ + 5O₂ → 3CO₂ + □H₂O 에서 □는?",
+      "choices": [
+        "5",
+        "8",
+        "3",
+        "4"
+      ],
+      "answerIndex": 3,
+      "explanation": "C₃H₈의 H 8개 → H₂O 4개",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0093",
+      "topic": "U07",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "강전해질에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "물에 녹으면 모두 이온으로 분리되어 전류가 잘 통한다",
+        "물에 전혀 녹지 않는다",
+        "전류가 통하지 않는 물질이다",
+        "물에 녹아도 분자 상태로 남는다"
+      ],
+      "answerIndex": 0,
+      "explanation": "강전해질은 모두 이온으로 분리됩니다(예: NaCl 수용액).",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0094",
+      "topic": "U07",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "용해도 규칙에 따라 물에 잘 녹는 것은?",
+      "choices": [
+        "AgCl",
+        "KNO₃",
+        "CaCO₃",
+        "BaSO₄"
+      ],
+      "answerIndex": 1,
+      "explanation": "질산염과 K⁺ 염은 녹습니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0095",
+      "topic": "U07",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "Cl⁻ 염 중에서 물에 녹지 않는(침전하는) 것은?",
+      "choices": [
+        "KCl",
+        "NaCl",
+        "AgCl",
+        "NH₄Cl"
+      ],
+      "answerIndex": 2,
+      "explanation": "Cl⁻ 염의 예외: AgCl, PbCl₂, Hg₂Cl₂",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0096",
+      "topic": "U07",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "Ba(NO₃)₂ 수용액과 Na₂SO₄ 수용액을 섞을 때 생기는 침전은?",
+      "choices": [
+        "Na₂SO₄",
+        "NaNO₃",
+        "Ba(NO₃)₂",
+        "BaSO₄"
+      ],
+      "answerIndex": 3,
+      "explanation": "SO₄²⁻ 염의 예외인 BaSO₄가 침전합니다. NaNO₃는 녹습니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0097",
+      "topic": "U07",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "AgNO₃(aq) + KCl(aq) 반응의 구경꾼 이온은?",
+      "choices": [
+        "K⁺, NO₃⁻",
+        "Ag⁺, Cl⁻",
+        "Cl⁻, NO₃⁻",
+        "Ag⁺, K⁺"
+      ],
+      "answerIndex": 0,
+      "explanation": "AgCl이 침전하고 K⁺와 NO₃⁻는 반응 전후 그대로 남습니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0098",
+      "topic": "U07",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "Pb(NO₃)₂(aq) + Na₂SO₄(aq) 반응의 알짜 이온 반응식은?",
+      "choices": [
+        "2Na⁺(aq) + SO₄²⁻(aq) → Na₂SO₄(s)",
+        "Pb²⁺(aq) + SO₄²⁻(aq) → PbSO₄(s)",
+        "Pb²⁺(aq) + 2NO₃⁻(aq) → Pb(NO₃)₂(s)",
+        "Na⁺(aq) + NO₃⁻(aq) → NaNO₃(s)"
+      ],
+      "answerIndex": 1,
+      "explanation": "구경꾼 이온 Na⁺, NO₃⁻를 빼면 PbSO₄ 침전만 남습니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0099",
+      "topic": "U07",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "아레니우스 정의에서 염기란?",
+      "choices": [
+        "산소를 내주는 물질",
+        "물에 녹아 H⁺ 이온을 내는 물질",
+        "물에 녹아 OH⁻ 이온을 내는 물질",
+        "전자를 얻는 물질"
+      ],
+      "answerIndex": 2,
+      "explanation": "산 = H⁺, 염기 = OH⁻",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0100",
+      "topic": "U07",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "강산과 강염기 반응의 알짜 이온 반응식은?",
+      "choices": [
+        "Na⁺(aq) + Cl⁻(aq) → NaCl(s)",
+        "H⁺(aq) + Cl⁻(aq) → HCl(aq)",
+        "H₂(g) + O₂(g) → H₂O(l)",
+        "H⁺(aq) + OH⁻(aq) → H₂O(l)"
+      ],
+      "answerIndex": 3,
+      "explanation": "강산 + 강염기의 알짜 이온 반응식은 항상 물 생성입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0101",
+      "topic": "U07",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "다음 중 강산이 아닌 것은?",
+      "choices": [
+        "HF",
+        "H₂SO₄",
+        "HNO₃",
+        "HCl"
+      ],
+      "answerIndex": 0,
+      "explanation": "HF는 약산입니다. 그러나 맹독성이므로 약산 = 안전이 아닙니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0102",
+      "topic": "U07",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "전자를 기준으로 산화란?",
+      "choices": [
+        "양성자를 얻는 것",
+        "전자를 잃는 것",
+        "전자를 얻는 것",
+        "중성자를 잃는 것"
+      ],
+      "answerIndex": 1,
+      "explanation": "산화 = 산소 얻음·수소 잃음·전자 잃음, 환원은 반대",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0103",
+      "topic": "U07",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "2Na + Cl₂ → 2NaCl 에서 환원되는 것은?",
+      "choices": [
+        "환원되는 것이 없다",
+        "NaCl",
+        "Cl₂",
+        "Na"
+      ],
+      "answerIndex": 2,
+      "explanation": "Na는 전자를 잃어(산화) Na⁺, Cl₂는 전자를 얻어(환원) Cl⁻가 됩니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0104",
+      "topic": "U07",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "Zn(s) + 2HCl(aq) → H₂(g) + ZnCl₂(aq)은 어떤 반응인가?",
+      "choices": [
+        "이중 치환 반응",
+        "합성 반응",
+        "침전 반응",
+        "단일 치환 반응"
+      ],
+      "answerIndex": 3,
+      "explanation": "A + BC → B + AC 형태의 단일 치환 반응입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0105",
+      "topic": "U07",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "2HgO(s) → 2Hg(l) + O₂(g)은 어떤 반응인가?",
+      "choices": [
+        "분해 반응",
+        "연소 반응",
+        "침전 반응",
+        "합성 반응"
+      ],
+      "answerIndex": 0,
+      "explanation": "한 화합물이 더 간단한 두 물질로 나뉘는 분해 반응입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0106",
+      "topic": "U07",
+      "level": "입문",
+      "type": "single_choice",
+      "question": "탄화수소 연료가 완전 연소하면 생기는 물질은?",
+      "choices": [
+        "CO와 H₂",
+        "CO₂와 H₂O",
+        "C와 H₂O",
+        "O₂와 H₂"
+      ],
+      "answerIndex": 1,
+      "explanation": "연소 = 산소와 반응해 열과 빛을 냄, 완전 연소 → CO₂ + H₂O",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0107",
+      "topic": "U07",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "테르밋 반응에 대한 설명으로 옳지 않은 것은?",
+      "choices": [
+        "Al과 Fe₂O₃가 반응한다",
+        "2000 ℃ 이상의 열을 낸다",
+        "물을 뿌리면 쉽게 꺼진다",
+        "산소를 스스로 공급해 질식 소화가 어렵다"
+      ],
+      "answerIndex": 2,
+      "explanation": "테르밋 화재에 물을 뿌리면 수소가 생겨 더 위험합니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0108",
+      "topic": "U07",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "반응을 일으키는 네 가지 추진력에 해당하지 않는 것은?",
+      "choices": [
+        "전자 이동",
+        "물 형성",
+        "고체 형성",
+        "색 변화"
+      ],
+      "answerIndex": 3,
+      "explanation": "추진력: 고체 형성, 물 형성, 전자 이동, 기체 형성. 색 변화는 반응의 증거입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0109",
+      "topic": "U07",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "2HCl(aq) + Na₂CO₃(aq) 반응에서 생기는 기체는?",
+      "choices": [
+        "CO₂",
+        "Cl₂",
+        "O₂",
+        "H₂"
+      ],
+      "answerIndex": 0,
+      "explanation": "강산 + 탄산염 → CO₂ + H₂O. 알짜: 2H⁺ + CO₃²⁻ → CO₂ + H₂O",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0110",
+      "topic": "U07",
+      "level": "기본",
+      "type": "single_choice",
+      "question": "이중 치환 반응의 형태는?",
+      "choices": [
+        "AB → A + B",
+        "AB + CD → AD + CB",
+        "A + BC → B + AC",
+        "A + B → AB"
+      ],
+      "answerIndex": 1,
+      "explanation": "이중 치환은 두 화합물이 짝을 서로 바꿉니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0111",
+      "topic": "U07",
+      "level": "계산",
+      "type": "single_choice",
+      "question": "□KOH(aq) + Fe(NO₃)₃(aq) → Fe(OH)₃(s) + 3KNO₃(aq) 에서 □는?",
+      "choices": [
+        "6",
+        "1",
+        "3",
+        "2"
+      ],
+      "answerIndex": 2,
+      "explanation": "Fe(OH)₃의 OH 3개 → KOH 3개",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    },
+    {
+      "id": "Q0112",
+      "topic": "U07",
+      "level": "응용",
+      "type": "single_choice",
+      "question": "제1종 분말 소화 약제의 주성분 NaHCO₃의 산·염기 성질은?",
+      "choices": [
+        "약산",
+        "강산",
+        "강염기",
+        "약염기"
+      ],
+      "answerIndex": 3,
+      "explanation": "NaHCO₃(탄산수소 소듐)는 약염기입니다.",
+      "sourceIds": [],
+      "origin": "강의 자료 「화학개론」 1~7장 기반 자체 제작"
+    }
+  ]
+}

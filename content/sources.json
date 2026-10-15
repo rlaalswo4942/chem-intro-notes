@@ -1,0 +1,45 @@
+{
+  "version": "1.0",
+  "sources": [
+    {
+      "id": "S01",
+      "kind": "primary_technical",
+      "organization": "BIPM (국제도량형국)",
+      "title": "SI units — Measurement units",
+      "url": "https://www.bipm.org/en/measurement-units",
+      "scope": "SI 기본 단위(kg, m, s, K)와 접두어"
+    },
+    {
+      "id": "S02",
+      "kind": "primary_technical",
+      "organization": "NIST",
+      "title": "Periodic Table of the Elements",
+      "url": "https://www.nist.gov/pml/periodic-table-elements",
+      "scope": "주기율표, 원소 기호·원자 번호"
+    },
+    {
+      "id": "S03",
+      "kind": "primary_technical",
+      "organization": "NCBI PubChem",
+      "title": "Periodic Table of Elements",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/periodic-table/",
+      "scope": "원소별 성질(전기음성도·이온화 에너지·상온 상태)"
+    },
+    {
+      "id": "S04",
+      "kind": "official",
+      "organization": "국가법령정보센터",
+      "title": "위험물안전관리법 시행령 (별표 1 위험물 및 지정수량)",
+      "url": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EC%9C%84%ED%97%98%EB%AC%BC%EC%95%88%EC%A0%84%EA%B4%80%EB%A6%AC%EB%B2%95%EC%8B%9C%ED%96%89%EB%A0%B9",
+      "scope": "위험물 제1류~제6류의 성질과 품명"
+    },
+    {
+      "id": "S05",
+      "kind": "textbook",
+      "organization": "LibreTexts",
+      "title": "Introductory Chemistry (LibreTexts)",
+      "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)",
+      "scope": "입문 화학 전반(측정·명명법·반응식·수용액 반응)의 영어 공개 교재"
+    }
+  ]
+}
