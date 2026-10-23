@@ -96,9 +96,11 @@
     });
     if (!review.length) return { units, review: null };
     const rv = { id: "review", tag: "REVIEW", title: BK.reviewTitle, en: BK.reviewEn, color: "", icon: "", desc: BK.reviewDesc, book: true, goals: [] };
-    rv.sections = review.map((s, i) => ({ id: "s" + String(i + 1).padStart(2, "0"), t: s.t, html: md(s.raw), src: citedIn(s.raw) }));
+    rv.sections = review.map((s, i) => sec(i, s.t, s.raw));
     return { units, review: rv };
   }
+  // 섹션 HTML은 처음 열 때 변환 (원고가 커도 첫 화면이 바로 뜨게)
+  const sec = (i, t, raw) => ({ id: "s" + String(i + 1).padStart(2, "0"), t, src: citedIn(raw), get html() { return this._h != null ? this._h : (this._h = md(raw)); } });
   function mkUnit(id, tag, title, desc, color, icon, body, level) {
     const secs = splitSections(body);
     let goals = [];
@@ -106,7 +108,7 @@
     if (g) goals = g.raw.split(/\r?\n/).filter(l => /^\s*(?:[-*]|\d+\.)\s+/.test(l)).map(stripMd);
     return {
       id, tag, title, en: level ? "난이도 · " + level : "", desc, color, icon, book: true, goals,
-      sections: secs.map((s, i) => ({ id: "s" + String(i + 1).padStart(2, "0"), t: s.t || "들어가며", html: md(s.raw), src: citedIn(s.raw) }))
+      sections: secs.map((s, i) => sec(i, s.t || "들어가며", s.raw))
     };
   }
   function parseTable(text) {
@@ -120,7 +122,10 @@
   async function boot() {
     main.innerHTML = `<div class="home"><p class="sub">교재를 불러오는 중…</p></div>`;
     try {
-      const [t, q, s] = await Promise.all(["content/textbook.md", "content/questions.json", "content/sources.json"].map(u => fetch(u, { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(u + " " + r.status); return u.endsWith(".md") ? r.text() : r.json(); })));
+      const get = u => fetch(u, { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(u + " " + r.status); return u.endsWith(".md") ? r.text() : r.json(); });
+      // 원고가 길면 SITE.book.files 로 여러 md 파일에 나눠 쓸 수 있음 (순서대로 이어 붙여 한 교재로 해석)
+      const [mds, q, s] = await Promise.all([Promise.all((BKraw.files || ["content/textbook.md"]).map(get)), get("content/questions.json"), get("content/sources.json")]);
+      const t = mds.join("\n\n");
       s.sources.forEach(x => (SRC[x.id] = { t: `${x.organization} — ${x.title}`, u: x.url, kind: KIND[x.kind] || x.kind || "참고 자료", scope: x.scope }));
       Object.entries(window.RESEARCH_SOURCES || {}).forEach(([id, x]) => (SRC[id] = x));
       QUESTIONS = q.questions; QNOTICE = q.notice;
@@ -152,18 +157,23 @@
   /* ───────── 사이드바 (카테고리) ───────── */
   const GROUPS = () => [
     { h: "시작", items: [{ id: "", t: "홈" }, { id: "guide", t: "사용법 · 동기화 안내" }, uItem("start")] },
-    { h: "교재", items: BOOK.map(L => uItem(L.id)) },
+    ...bookGroups().map(g => ({ h: g.h, fold: g.fold, items: g.units.map(L => uItem(L.id)) })),
     { h: "연습 · 도구", items: [QUESTIONS.length && { id: "quiz", t: "연습문제", sub: () => { const s = quizStats(); return `응답 ${s.graded}/${s.total}${s.pct != null ? " · 정답률 " + s.pct + "%" : ""}`; } }, EXAM && { id: "exam", t: "모의고사", sub: () => `${EXAM.sets.length}개 유형 · 유형별 ${EXAM.sets[0].items.length}문항` }, FEAT.calc && { id: "calc", t: LB.calcTitle }, DICT.length && { id: "dict", t: LB.dictTitle }, uItem("review")] },
     (window.EXTRA || []).length && { h: LB.extraGroup, items: (window.EXTRA || []).map(L => uItem(L.id)) },
     { h: "근거", items: [{ id: "sources", t: "출처 모음" }] }
   ];
+  // SITE.book.groups = [{ h: "문법", from: "U03", to: "U21", desc }] → 교재 단원을 묶음별로 표시 (없으면 '교재' 하나). 사이드바에선 묶음 제목을 눌러 접고 펼침
+  const bookGroups = () => (BKraw.groups || [{ h: "교재", desc: LB.book }]).map(g => ({ h: g.h, desc: g.desc || "", fold: !!BKraw.groups, units: BOOK.filter(L => (!g.from || L.tag >= g.from) && (!g.to || L.tag <= g.to)) })).filter(g => g.units.length);
+  const foldSt = {}; // 묶음 제목 → 접힘 여부 (직접 누른 것만, 나머지는 지금 보는 단원이 든 묶음만 펼침)
   function uItem(id) { const L = UNITS.find(u => u.id === id); return L ? { id, t: L.title, L } : null; }
   function renderSide() {
     const nav = document.getElementById("side-nav");
     const route = (parseHash()[0] || "").replace(/^home$/, "");
     let h = "";
     GROUPS().filter(g => g && g.items.some(Boolean)).forEach(g => {
-      h += `<div class="side-group">${g.h}</div>`;
+      const shut = g.fold && (g.h in foldSt ? foldSt[g.h] : !g.items.some(it => it && it.id === route));
+      h += g.fold ? `<div class="side-group" data-fold="${esc(g.h)}" data-shut="${shut ? 1 : 0}" style="cursor:pointer">${g.h} ${shut ? "▸" : "▾"}</div>` : `<div class="side-group">${g.h}</div>`;
+      if (shut) return;
       g.items.filter(Boolean).forEach(it => {
         const L = it.L;
         let sub = "";
@@ -175,6 +185,7 @@
     nav.innerHTML = h;
   }
   document.getElementById("side-nav").addEventListener("click", e => {
+    const f = e.target.closest("[data-fold]"); if (f) { foldSt[f.dataset.fold] = f.dataset.shut !== "1"; renderSide(); return; }
     const b = e.target.closest("[data-go]"); if (!b) return;
     location.hash = b.dataset.go;
     if (window.innerWidth < 900) setSide(false);
@@ -190,17 +201,16 @@
       <div class="start-row">${firstL ? `<button class="big" data-go="#${firstL.id}">처음부터 시작하기</button>` : ""}${lastL ? `<button class="big alt" data-go="#${lastL.id}">이어하기 · ${esc(tagOf(lastL))} ${esc(lastL.title)}</button>` : ""}${QUESTIONS.length ? `<button class="big alt" data-go="#quiz">연습문제</button>` : ""}</div>
       ${SITE.notice ? `<div class="notice">${SITE.notice}</div>` : ""}
       <div class="stats"><div><small>교재 읽기</small><b>${o.pct}%</b><span>${o.n}/${o.t} 섹션</span></div>${QUESTIONS.length ? `<div><small>문제 정답률</small><b>${qs.pct != null ? qs.pct + "%" : "—"}</b><span>채점 ${qs.graded}/${qs.total} · 미응답 제외</span></div>` : ""}</div>
-      <h2 class="grp">교재 <small>${esc(LB.book)}</small></h2><div class="cat-grid">`;
-    BOOK.forEach(L => (h += card(L)));
-    h += `</div><h2 class="grp">연습 · 복습</h2><div class="cat-grid">`;
-    if (QUESTIONS.length) h += tool("quiz", "PRACTICE", `연습문제 ${QUESTIONS.length}문항`, "입문·기본·응용·계산 · 단원별 · 오답 다시 풀기");
+      ${bookGroups().map(g => `<h2 class="grp">${esc(g.h)} <small>${esc(g.desc)}</small></h2><div class="cat-grid">${g.units.map(L => card(L)).join("")}</div>`).join("")}
+      <h2 class="grp">연습 · 복습</h2><div class="cat-grid">`;
+    if (QUESTIONS.length) h += tool("quiz", "PRACTICE", `연습문제 ${QUESTIONS.length}문항`, "공부한 범위 · 입문·기본·응용·계산 · 단원별 · 오답 다시 풀기");
     if (EXAM) h += tool("exam", "MOCK EXAM", `모의고사 ${EXAM.sets.length}개 유형`, "빈칸 단답 · O/X · 질문형 단답 · 코드 작성 — 시험지처럼 한 장에 풀고 한 번에 채점");
     if (FEAT.calc) h += tool("calc", "TOOL", LB.calcTitle, "TP·TN·FP·FN을 넣어 정확도·정밀도·재현율·F1 계산");
     if (DICT.length) h += tool("dict", "TOOL", LB.dictTitle, `교재의 용어 ${DICT.length}개 검색`);
     const rvL = UNITS.find(u => u.id === "review"); if (rvL) h += card(rvL);
-    h += `</div><h2 class="grp">${esc(LB.extraGroup)} <small>${esc(LB.extra)}</small></h2><div class="cat-grid">`;
-    (window.EXTRA || []).forEach(L => (h += card(L)));
-    h += `</div></div>`;
+    h += `</div>`;
+    if ((window.EXTRA || []).length) h += `<h2 class="grp">${esc(LB.extraGroup)} <small>${esc(LB.extra)}</small></h2><div class="cat-grid">${window.EXTRA.map(L => card(L)).join("")}</div>`;
+    h += `</div>`;
     main.innerHTML = h;
     main.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => (location.hash = b.dataset.go)));
   }
@@ -297,6 +307,8 @@
   /* ───────── 연습문제 ───────── */
   let QS = null; // 현재 풀이 세션 { mode, topic, list:[id], i, answered:{id:{a,ok}} }
   const LEVEL_MODES = { basic: ["입문", "기본"], applied: ["응용", "계산"] };
+  // 공부한 범위 = 읽음 체크가 하나라도 있는 단원
+  const studiedTags = () => { const c = checks(); return new Set(BOOK.filter(L => c[L.id] && Object.values(c[L.id]).some(Boolean)).map(L => L.tag)); };
   function quizList(mode, topic) {
     const st = quizSt();
     let list = QUESTIONS;
@@ -304,6 +316,7 @@
     else if (mode === "applied") list = list.filter(q => LEVEL_MODES.applied.includes(q.level));
     else if (mode === "unit") list = list.filter(q => q.topic === topic);
     else if (mode === "wrong") list = list.filter(q => st[q.id] && !st[q.id].ok);
+    else if (mode === "studied") { const t = studiedTags(); list = list.filter(q => t.has(q.topic)); }
     const ids = list.map(q => q.id);
     for (let i = ids.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [ids[i], ids[j]] = [ids[j], ids[i]]; } // 문제 순서만 섞음 (보기 순서는 원본 유지)
     return ids;
@@ -311,16 +324,17 @@
   function renderQuiz(topic) {
     if (topic && !QS) QS = { mode: "unit", topic, list: quizList("unit", topic), i: 0, answered: {} };
     if (topic && QS && (QS.mode !== "unit" || QS.topic !== topic)) QS = { mode: "unit", topic, list: quizList("unit", topic), i: 0, answered: {} };
-    const s = quizStats(), st = quizSt(), wrongN = QUESTIONS.filter(q => st[q.id] && !st[q.id].ok).length;
+    const s = quizStats(), st = quizSt(), wrongN = QUESTIONS.filter(q => st[q.id] && !st[q.id].ok).length, studied = studiedTags(), studiedN = QUESTIONS.filter(q => studied.has(q.topic)).length;
     let h = `<div class="home quiz"><h1>연습문제</h1>
       <div class="notice"><b>${esc(QNOTICE)}</b> 정답률은 <b>정답 수 ÷ 채점된 응답 수 × 100</b>(미응답 제외)이며 ${esc(LB.scoreNote)}</div>
       <div class="overall"><b>전체</b><span class="bar"><i style="width:${s.total ? s.graded / s.total * 100 : 0}%"></i></span><small>채점 ${s.graded}/${s.total}</small><b>정답률 ${s.pct != null ? s.pct + "%" : "—"}</b>${wrongN ? `<small>오답 ${wrongN}개</small>` : ""}</div>
       <div class="modes">
+        <button data-mode="studied" ${studiedN ? "" : "disabled"} title="${studied.size ? "체크한 단원: " + esc([...studied].join(" · ")) : "교재에서 읽음 체크를 하면 그 단원 문제가 나와요"}">공부한 범위 <small>${studied.size ? studied.size + "개 단원 · " + studiedN : "체크 없음"}</small></button>
         <button data-mode="basic">기본 모드 <small>입문·기본 ${QUESTIONS.filter(q => LEVEL_MODES.basic.includes(q.level)).length}</small></button>
         <button data-mode="all">전 범위 <small>${QUESTIONS.length}</small></button>
         <button data-mode="applied">응용 문제 <small>응용·계산 ${QUESTIONS.filter(q => LEVEL_MODES.applied.includes(q.level)).length}</small></button>
         <button data-mode="wrong" ${wrongN ? "" : "disabled"}>오답 다시 풀기 <small>${wrongN}</small></button>
-        <select data-unit><option value="">단원별 선택…</option>${BOOK.map(L => `<option value="${L.tag}" ${QS && QS.mode === "unit" && QS.topic === L.tag ? "selected" : ""}>${L.tag} ${esc(L.title)} (${QUESTIONS.filter(q => q.topic === L.tag).length})</option>`).join("")}</select>
+        <select data-unit><option value="">단원별 선택…</option>${bookGroups().map(g => (g.fold ? `<optgroup label="${esc(g.h)}">` : "") + g.units.map(L => `<option value="${L.tag}" ${QS && QS.mode === "unit" && QS.topic === L.tag ? "selected" : ""}>${L.tag} ${esc(L.title)} (${QUESTIONS.filter(q => q.topic === L.tag).length})</option>`).join("") + (g.fold ? "</optgroup>" : "")).join("")}</select>
       </div><div id="qbox"></div>
       <h2 class="grp">단원별 기록</h2><div class="tbl"><table class="qtable"><tr><th>단원</th><th>문항</th><th>채점</th><th>정답률</th><th></th></tr>${BOOK.map(L => { const u = quizStats(L.tag); return `<tr><td>${L.tag} ${esc(L.title)}</td><td>${u.total}</td><td>${u.graded}</td><td>${u.pct != null ? u.pct + "%" : "—"}</td><td><a href="#${L.id}">교재 ›</a></td></tr>`; }).join("")}</table></div>
       <p><button class="pill ghost" data-reset>기록 초기화</button></p></div>`;
@@ -335,7 +349,7 @@
   }
   function drawQ() {
     const box = document.getElementById("qbox"); if (!box) return;
-    if (!QS) { box.innerHTML = `<div class="qcard empty">위에서 모드를 고르면 문제가 시작됩니다. 처음이면 <b>기본 모드</b>를 추천해요.</div>`; return; }
+    if (!QS) { box.innerHTML = `<div class="qcard empty">위에서 모드를 고르면 문제가 시작됩니다. 공부하면서 읽음 체크를 했다면 <b>공부한 범위</b>, 처음이면 <b>기본 모드</b>를 추천해요.</div>`; return; }
     if (!QS.list.length) { box.innerHTML = `<div class="qcard empty">이 모드에 해당하는 문제가 없어요.</div>`; return; }
     if (QS.i >= QS.list.length) {
       const a = Object.values(QS.answered), ok = a.filter(x => x.ok).length;
@@ -347,7 +361,7 @@
     }
     const q = QUESTIONS.find(x => x.id === QS.list[QS.i]), done = QS.answered[q.id], L = BOOK.find(u => u.tag === q.topic), prev = quizSt()[q.id];
     let h = `<div class="qcard"><div class="qmeta"><span>${QS.i + 1} / ${QS.list.length}</span><span class="lv">${esc(q.level)}</span><span>${esc(q.topic)}${L ? " " + esc(L.title) : ""}</span><span class="qid">${q.id}${prev ? ` · 지난 기록 ${prev.ok ? "맞힘" : "틀림"} (${prev.n}회)` : ""}</span></div>
-      <h3>${esc(q.question)}</h3>${q.code ? `<pre class="qcode">${esc(q.code)}</pre>` : ""}<div class="choices${q.code ? " mono" : ""}">`;
+      ${q.passage ? `<div class="qcode" style="font:inherit;font-size:16px;line-height:1.75;white-space:pre-wrap">${esc(q.passage)}</div>` : ""}<h3>${esc(q.question)}</h3>${q.code ? `<pre class="qcode">${esc(q.code)}</pre>` : ""}<div class="choices${q.code ? " mono" : ""}">`;
     q.choices.forEach((c, i) => {
       let cls = "";
       if (done) cls = i === q.answerIndex ? "right" : i === done.a ? "wrong" : "dim";
